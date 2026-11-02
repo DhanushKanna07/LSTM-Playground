@@ -74,15 +74,27 @@ Located in `src/architecture_explorer.py`, `src/playground_canvas.py`, `src/arch
 
 ### 2. Interactive Gate & Memory Explorer
 Located in `src/gate_memory_explorer.py`, `src/gate_memory_inspector.py`, and `src/lstm_engine.py`:
-* **Animated LSTM Cell Circuit Diagram**:
-  * Click ** Play 30 Days** (or scrub the day slider / click any neuron `#1–#64`) to watch the 4 gates operate inside the LSTM cell:
-    $$\begin{aligned}
-    i_t &= \sigma(W_{ii} x_t + b_{ii} + W_{hi} h_{t-1} + b_{hi}) \quad &\text{(Input Gate — Write Filter)} \\
-    f_t &= \sigma(W_{if} x_t + b_{if} + W_{hf} h_{t-1} + b_{hf}) \quad &\text{(Forget Gate — Keep Ratio)} \\
-    g_t &= \tanh(W_{ig} x_t + b_{ig} + W_{hg} h_{t-1} + b_{hg}) \quad &\text{(Candidate — New Note)} \\
-    o_t &= \sigma(W_{io} x_t + b_{io} + W_{ho} h_{t-1} + b_{ho}) \quad &\text{(Output Gate — Read Filter)} \\
-    c_t &= \underbrace{f_t \odot c_{t-1}}_{\text{Kept from Yesterday}} + \underbrace{i_t \odot g_t}_{\text{Written Today}}, \qquad h_t = o_t \odot \tanh(c_t)
-    \end{aligned}$$
+
+* **Animated LSTM Cell Circuit Diagram:**
+  - Click **Play 30 Days** (or scrub the day slider / click any neuron `#1–#64`) to watch the 4 gates operate inside the LSTM cell:
+
+    **Input Gate — Write Filter**
+    $$i_t = \sigma(W_{ii}x_t+b_{ii}+W_{hi}h_{t-1}+b_{hi})$$
+
+    **Forget Gate — Keep Ratio**
+    $$f_t = \sigma(W_{if}x_t+b_{if}+W_{hf}h_{t-1}+b_{hf})$$
+
+    **Candidate — New Note**
+    $$g_t = \tanh(W_{ig}x_t+b_{ig}+W_{hg}h_{t-1}+b_{hg})$$
+
+    **Output Gate — Read Filter**
+    $$o_t = \sigma(W_{io}x_t+b_{io}+W_{ho}h_{t-1}+b_{ho})$$
+
+    **Cell State Update**
+    $$c_t = \underbrace{f_t \odot c_{t-1}}_{\text{Kept from Yesterday}} + \underbrace{i_t \odot g_t}_{\text{Written Today}}$$
+
+    **Hidden State Update**
+    $$h_t = o_t \odot \tanh(c_t)$$
   * Displays the exact live arithmetic inside each gate box and the **Memory Survival Horizon** bar showing how much of each earlier day's write ($k \le t$) still survives in $c_t$:
     $$c_t = \sum_{k=1}^{t} \left(\prod_{j=k+1}^{t} f_j\right) (i_k \odot g_k)$$
 * **Compact 2×2 Interactive Plotly Grid**:
