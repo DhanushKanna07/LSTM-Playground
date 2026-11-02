@@ -1,0 +1,39 @@
+{
+    "version": "V2",
+    "sequence_length": 30,
+    "input_size": 8,
+    "hidden_size": 64,
+    "num_cities": 50,
+    "embedding_dim": 8,
+    "temporal_features": [
+        "temperature_2m_max",
+        "temperature_2m_min",
+        "temperature_2m_mean",
+        "relative_humidity_2m_mean",
+        "precipitation_log",
+        "wind_speed_10m_max",
+        "day_of_year_sin",
+        "day_of_year_cos"
+    ],
+    "model_A": {
+        "geo_features": [
+            "latitude",
+            "longitude",
+            "elevation_m"
+        ],
+        "geo_dim": 3
+    },
+    "model_B": {
+        "geo_features": [
+            "latitude",
+            "longitude",
+            "elevation_m",
+            "coastal_distance_km"
+        ],
+        "geo_dim": 4
+    },
+    "target": "temperature_2m_max_raw",
+    "target_unit": "Celsius",
+    "train_end": "2024-10-10",
+    "validation_end": "2025-10-19"
+}

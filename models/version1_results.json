@@ -1,0 +1,15 @@
+{
+    "model": "Univariate City-Aware LSTM",
+    "sequence_length": 30,
+    "hidden_size": 64,
+    "embedding_dim": 8,
+    "epochs_trained": 15,
+    "best_epoch": 10,
+    "best_validation_loss": 0.0005843851061408373,
+    "test_mae": 1.0373059511184692,
+    "test_rmse": 1.4526557574907821,
+    "test_r2": 0.950066328048706,
+    "baseline_mae": 1.0502080752747058,
+    "baseline_rmse": 1.490527238568533,
+    "baseline_r2": 0.9474288054217274
+}

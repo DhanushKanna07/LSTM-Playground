@@ -1,0 +1,51 @@
+city,state,region,latitude,longitude,elevation_m
+Delhi,Delhi,North,28.6139,77.209,214.0
+Mumbai,Maharashtra,West,19.076,72.8777,6.0
+Kolkata,West Bengal,East,22.5726,88.3639,12.0
+Chennai,Tamil Nadu,South,13.0827,80.2707,12.0
+Bengaluru,Karnataka,South,12.9716,77.5946,910.0
+Hyderabad,Telangana,South,17.385,78.4867,505.0
+Ahmedabad,Gujarat,West,23.0225,72.5714,53.0
+Pune,Maharashtra,West,18.5204,73.8567,561.0
+Surat,Gujarat,West,21.1702,72.8311,17.0
+Jaipur,Rajasthan,North,26.9124,75.7873,431.0
+Lucknow,Uttar Pradesh,North,26.8467,80.9462,117.0
+Kanpur,Uttar Pradesh,North,26.4499,80.3319,133.0
+Nagpur,Maharashtra,Central,21.1458,79.0882,311.0
+Indore,Madhya Pradesh,Central,22.7196,75.8577,551.0
+Bhopal,Madhya Pradesh,Central,23.2599,77.4126,495.0
+Patna,Bihar,East,25.5941,85.1376,55.0
+Vadodara,Gujarat,West,22.3072,73.1812,35.0
+Ludhiana,Punjab,North,30.901,75.8573,252.0
+Agra,Uttar Pradesh,North,27.1767,78.0081,170.0
+Nashik,Maharashtra,West,19.9975,73.7898,584.0
+Varanasi,Uttar Pradesh,North,25.3176,82.9739,81.0
+Srinagar,Jammu and Kashmir,North,34.0837,74.7973,1589.0
+Amritsar,Punjab,North,31.634,74.8723,234.0
+Prayagraj,Uttar Pradesh,North,25.4358,81.8463,95.0
+Ranchi,Jharkhand,East,23.3441,85.3096,641.0
+Coimbatore,Tamil Nadu,South,11.0168,76.9558,431.0
+Madurai,Tamil Nadu,South,9.9252,78.1198,141.0
+Visakhapatnam,Andhra Pradesh,South,17.6868,83.2185,40.0
+Vijayawada,Andhra Pradesh,South,16.5062,80.648,49.0
+Kochi,Kerala,South,9.9312,76.2673,6.0
+Thiruvananthapuram,Kerala,South,8.5241,76.9366,12.0
+Guwahati,Assam,Northeast,26.1445,91.7362,52.0
+Bhubaneswar,Odisha,East,20.2961,85.8245,44.0
+Raipur,Chhattisgarh,Central,21.2514,81.6296,296.0
+Chandigarh,Chandigarh,North,30.7333,76.7794,343.0
+Dehradun,Uttarakhand,North,30.3165,78.0322,652.0
+Shimla,Himachal Pradesh,North,31.1048,77.1734,2195.0
+Jammu,Jammu and Kashmir,North,32.7266,74.857,310.0
+Jodhpur,Rajasthan,North,26.2389,73.0243,220.0
+Gwalior,Madhya Pradesh,Central,26.2183,78.1828,214.0
+Mysuru,Karnataka,South,12.2958,76.6394,748.0
+Mangaluru,Karnataka,South,12.9141,74.856,22.0
+Puducherry,Puducherry,South,11.9416,79.8083,11.0
+Panaji,Goa,West,15.4909,73.8278,65.0
+Shillong,Meghalaya,Northeast,25.5788,91.8933,1436.0
+Imphal,Manipur,Northeast,24.817,93.9368,782.0
+Agartala,Tripura,Northeast,23.8315,91.2868,12.0
+Gangtok,Sikkim,Northeast,27.3389,88.6065,1487.0
+Leh,Ladakh,North,34.1526,77.5771,3414.0
+Port Blair,Andaman and Nicobar Islands,South,11.6234,92.7265,19.0

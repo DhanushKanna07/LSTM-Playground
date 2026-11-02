@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+scikit-learn
+joblib
+torch
+streamlit
+plotly
+matplotlib
+seaborn
+jupyter
+ipykernel
+huggingface_hub
+geopandas
+shapely
+pyproj
