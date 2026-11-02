@@ -40,7 +40,7 @@ Unlike toy neural network demos that use synthetic data or random weights, every
 
 All three models predict **next-day maximum temperature (`temperature_2m_max` in °C)** from a **30-day sliding window** of historical weather observations, evaluated on **18,750 held-out test samples** (375 test days per city across all 50 cities):
 
-| Specification / Metric | Naive Persistence ($y_t = y_{t-1}$) | **Baseline V1** (`CityAwareLSTM`) | **Model A** (`MultivariateWeatherLSTM`) | **Model B** (`MultivariateWeatherLSTM`) 🏆 |
+| Specification / Metric | Naive Persistence ($y_t = y_{t-1}$) | **Baseline V1** (`CityAwareLSTM`) | **Model A** (`MultivariateWeatherLSTM`) | **Model B** (`MultivariateWeatherLSTM`) |
 | :--- | :---: | :---: | :---: | :---: |
 | **Temporal Input Tensor** | Day 30 `temp_max` | `(B, 30, 1)` — Max Temp only | `(B, 30, 8)` — 8 Daily Features | `(B, 30, 8)` — 8 Daily Features |
 | **LSTM Recurrent Core** | — | 64 Hidden Units (`16,896` params) | 64 Hidden Units (`18,944` params) | 64 Hidden Units (`18,944` params) |
@@ -75,7 +75,7 @@ Located in `src/architecture_explorer.py`, `src/playground_canvas.py`, `src/arch
 ### 2. Interactive Gate & Memory Explorer
 Located in `src/gate_memory_explorer.py`, `src/gate_memory_inspector.py`, and `src/lstm_engine.py`:
 * **Animated LSTM Cell Circuit Diagram**:
-  * Click **▶ Play 30 Days** (or scrub the day slider / click any neuron `#1–#64`) to watch the 4 gates operate inside the LSTM cell:
+  * Click ** Play 30 Days** (or scrub the day slider / click any neuron `#1–#64`) to watch the 4 gates operate inside the LSTM cell:
     $$\begin{aligned}
     i_t &= \sigma(W_{ii} x_t + b_{ii} + W_{hi} h_{t-1} + b_{hi}) \quad &\text{(Input Gate — Write Filter)} \\
     f_t &= \sigma(W_{if} x_t + b_{if} + W_{hf} h_{t-1} + b_{hf}) \quad &\text{(Forget Gate — Keep Ratio)} \\
