@@ -91,9 +91,7 @@ Located in `src/gate_memory_explorer.py`, `src/gate_memory_inspector.py`, and `s
     $$o_t = \sigma(W_{io}x_t+b_{io}+W_{ho}h_{t-1}+b_{ho})$$
 
     **Cell State Update**
-    $$
-    c_t = f_t \odot c_{t-1} + i_t \odot g_t
-    $$
+    $$c_t = f_t \odot c_{t-1} + i_t \odot g_t$$
 
     **Hidden State Update**
     $$h_t = o_t \odot \tanh(c_t)$$
